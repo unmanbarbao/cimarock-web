@@ -1,0 +1,33 @@
+.season-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 0.55rem 1rem;
+  background: var(--concrete);
+  border-bottom: 1px solid rgba(242, 239, 230, 0.08);
+}
+
+.season-banner .meta {
+  color: var(--paper);
+  letter-spacing: 0.14em;
+}
+
+.season-banner__dot {
+  width: 0.55rem;
+  height: 0.55rem;
+  background: var(--gold);
+}
+
+.season-banner--live .season-banner__dot {
+  background: var(--signal);
+  box-shadow: 0 0 0 3px rgba(255, 59, 59, 0.25);
+}
+
+.season-banner--post .season-banner__dot {
+  background: var(--magenta);
+}
+
+.season-banner--off .season-banner__dot {
+  background: var(--dust);
+}

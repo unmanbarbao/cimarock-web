@@ -1,0 +1,138 @@
+[
+  {
+    "slug": "los-llanos-duros",
+    "name": "Los Llanos Duros",
+    "genre": "Stoner / Desert",
+    "city": "Yopal",
+    "bio": "Trío que mezcla el peso del desert rock con paisajes sonoros del llano. Activos desde 2018, han sido parte de la consolidación de la escena alternativa en Casanare.",
+    "editions": [2023, 2024, 2025],
+    "spotify": "https://open.spotify.com",
+    "youtube": "https://youtube.com",
+    "instagram": "@losllanosduros",
+    "featured": true,
+    "photo": {
+      "label": "Banda en ensayo, Yopal",
+      "tone": "1",
+      "src": "/placeholders/band-1.jpg"
+    }
+  },
+  {
+    "slug": "bruja-de-sabana",
+    "name": "Bruja de Sabana",
+    "genre": "Post-punk",
+    "city": "Yopal",
+    "bio": "Voces afiladas y bajo insistente. Crónicas urbanas del trópico interior. Una de las propuestas más potentes de la nueva ola casanareña.",
+    "editions": [2024, 2025],
+    "spotify": "https://open.spotify.com",
+    "youtube": "https://youtube.com",
+    "instagram": "@brujadesabana",
+    "featured": true,
+    "photo": {
+      "label": "Vocalista en vivo, CimaRock",
+      "tone": "2",
+      "src": "/placeholders/vocal-1.jpg"
+    }
+  },
+  {
+    "slug": "cemento-rojo",
+    "name": "Cemento Rojo",
+    "genre": "Hardcore",
+    "city": "Aguazul",
+    "bio": "Hardcore político y territorial. Letras sobre extractivismo, juventud y resistencia en el piedemonte.",
+    "editions": [2022, 2025],
+    "spotify": "https://open.spotify.com",
+    "youtube": "https://youtube.com",
+    "instagram": "@cementorojo",
+    "featured": true,
+    "photo": {
+      "label": "Pogo frente al escenario",
+      "tone": "3",
+      "src": "/placeholders/crowd-1.jpg"
+    }
+  },
+  {
+    "slug": "orilla-negra",
+    "name": "Orilla Negra",
+    "genre": "Shoegaze",
+    "city": "Villanueva",
+    "bio": "Capas de guitarra y reverb que miran al río. Shoegaze tropical sin clichés costeños.",
+    "editions": [2025],
+    "spotify": "https://open.spotify.com",
+    "youtube": "https://youtube.com",
+    "instagram": "@orillanegra",
+    "featured": false,
+    "photo": {
+      "label": "Silueta contra luces ámbar",
+      "tone": "4",
+      "src": "/placeholders/lights-1.jpg"
+    }
+  },
+  {
+    "slug": "mata-de-ruido",
+    "name": "Mata de Ruido",
+    "genre": "Noise rock",
+    "city": "Yopal",
+    "bio": "Improvisación, feedback y humor negro. Colectivo abierto que nutre talleres y jams de la Corporación.",
+    "editions": [2021, 2023, 2024],
+    "spotify": "https://open.spotify.com",
+    "youtube": "https://youtube.com",
+    "instagram": "@mataderuido",
+    "featured": true,
+    "photo": {
+      "label": "Pedales y cables en backstage",
+      "tone": "5",
+      "src": "/placeholders/backstage-1.jpg"
+    }
+  },
+  {
+    "slug": "kilometro-cero",
+    "name": "Kilómetro Cero",
+    "genre": "Indie rock",
+    "city": "Paz de Ariporo",
+    "bio": "Melodías de carretera y letras de ida y vuelta. Puente entre el indie nacional y la periferia llanera.",
+    "editions": [2024],
+    "spotify": "https://open.spotify.com",
+    "youtube": "https://youtube.com",
+    "instagram": "@km0banda",
+    "featured": false,
+    "photo": {
+      "label": "Viaje al festival, atardecer",
+      "tone": "6",
+      "src": "/placeholders/sunset-1.jpg"
+    }
+  },
+  {
+    "slug": "tormenta-seca",
+    "name": "Tormenta Seca",
+    "genre": "Metal",
+    "city": "Yopal",
+    "bio": "Riffs densos y batería de verano. Representan la rama más pesada de la escena local.",
+    "editions": [2020, 2022, 2025],
+    "spotify": "https://open.spotify.com",
+    "youtube": "https://youtube.com",
+    "instagram": "@tormentaseca",
+    "featured": true,
+    "photo": {
+      "label": "Público con manos al aire",
+      "tone": "1",
+      "src": "/placeholders/crowd-2.jpg"
+    }
+  },
+  {
+    "slug": "casa-abierta",
+    "name": "Casa Abierta",
+    "genre": "Folk rock",
+    "city": "Yopal",
+    "bio": "Acústicos eléctricos. Cuentan el llano sin folclorismo de postal.",
+    "editions": [2023],
+    "spotify": "https://open.spotify.com",
+    "youtube": "https://youtube.com",
+    "instagram": "@casaabiertamusica",
+    "featured": false,
+    "photo": {
+      "label": "Guitarra frente a sabana",
+      "tone": "2",
+      "src": "/placeholders/guitar-1.jpg"
+    }
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "slug": "desde-yopal-para-la-escena",
+    "title": "Desde Yopal para la escena",
+    "type": "editorial",
+    "date": "2026-02-10",
+    "excerpt": "La Corporación Festival CimaRock formaliza una década de trabajo colectivo: festival, memoria y plataforma para artistas del llano.",
+    "photo": {
+      "label": "Atardecer sobre Yopal",
+      "tone": "gold",
+      "src": "/placeholders/sunset-1.jpg"
+    }
+  },
+  {
+    "slug": "entrevista-bruja-de-sabana",
+    "title": "Bruja de Sabana: post-punk en el trópico interior",
+    "type": "entrevista",
+    "date": "2025-11-02",
+    "excerpt": "Hablamos con la banda sobre escribir desde Casanare sin pedir permiso a las capitales.",
+    "photo": {
+      "label": "Entrevista backstage",
+      "tone": "magenta",
+      "src": "/placeholders/backstage-1.jpg"
+    }
+  },
+  {
+    "slug": "cronica-cimarock-2025",
+    "title": "Crónica: así se vivió CimaRock 2025",
+    "type": "cronica",
+    "date": "2025-09-20",
+    "excerpt": "Dos días, dos escenarios, una ciudad que vibra distinto cuando el rock toma el parque.",
+    "photo": {
+      "label": "Multitud al atardecer",
+      "tone": "1",
+      "src": "/placeholders/crowd-2.jpg"
+    }
+  },
+  {
+    "slug": "mapa-escena-casanare",
+    "title": "Mapa incompleto de la escena alternativa de Casanare",
+    "type": "historia",
+    "date": "2025-06-15",
+    "excerpt": "No es un directorio cerrado: es una invitación a nombrar, escuchar y sostener.",
+    "photo": {
+      "label": "Ensayo en casa cultural",
+      "tone": "3",
+      "src": "/placeholders/band-2.jpg"
+    }
+  }
+]

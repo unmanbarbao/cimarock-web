@@ -1,0 +1,39 @@
+.block-intro {
+  background: var(--paper);
+  color: var(--ink);
+  padding: var(--space-8) 0;
+}
+
+.block-intro__grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.block-intro__title {
+  font-size: clamp(2.8rem, 7vw, 5rem);
+  max-width: 10ch;
+}
+
+.block-intro__copy {
+  font-size: 1.1rem;
+  max-width: 36rem;
+  color: var(--concrete);
+}
+
+.block-intro__copy p + p {
+  margin-top: 1rem;
+}
+
+.block-intro__sign {
+  margin-top: 1.5rem;
+  font-size: 1.25rem;
+  color: var(--magenta);
+}
+
+@media (min-width: 860px) {
+  .block-intro__grid {
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: end;
+    gap: 3rem;
+  }
+}

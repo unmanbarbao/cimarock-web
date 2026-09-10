@@ -1,0 +1,134 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.85rem 1.35rem;
+  border: 2px solid var(--gold);
+  background: transparent;
+  color: var(--paper);
+  font-family: var(--font-ui);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.2s var(--ease), color 0.2s var(--ease),
+    border-color 0.2s var(--ease), transform 0.2s var(--ease);
+}
+
+.btn:hover {
+  background: var(--gold);
+  color: var(--ink);
+  transform: translateY(-1px);
+}
+
+.btn--primary {
+  background: var(--gold);
+  color: var(--ink);
+  border-color: var(--gold);
+}
+
+.btn--primary:hover {
+  background: var(--paper);
+  border-color: var(--paper);
+}
+
+.btn--magenta {
+  border-color: var(--magenta);
+  color: var(--paper);
+}
+
+.btn--magenta:hover {
+  background: var(--magenta);
+  color: var(--paper);
+}
+
+.btn--ghost {
+  border-color: var(--paper);
+}
+
+.btn--ghost:hover {
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.btn--ink {
+  border-color: var(--ink);
+  color: var(--ink);
+}
+
+.btn--ink:hover {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.photo-frame {
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  clip-path: polygon(0 0, 100% 0, 100% 96%, 97% 100%, 0 100%);
+  background: var(--concrete);
+}
+
+.photo-frame__img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 1;
+  filter: contrast(1.05) saturate(0.92);
+}
+
+.photo-frame__inner {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: flex-end;
+  padding: 1rem;
+  background: linear-gradient(
+    160deg,
+    transparent 35%,
+    rgba(0, 0, 0, 0.62) 100%
+  );
+  z-index: 3;
+}
+
+.photo-frame__label {
+  font-size: 0.65rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--paper);
+  opacity: 0.85;
+  max-width: 90%;
+}
+
+.section-head {
+  margin-bottom: var(--space-6);
+  max-width: 40rem;
+}
+
+.section-head--light {
+  color: var(--ink);
+}
+
+.section-head--light .meta {
+  color: var(--magenta);
+}
+
+.section-head__title {
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  margin-top: 0.35rem;
+}
+
+.section-head__body {
+  margin-top: 1rem;
+  color: var(--dust);
+  font-size: 1.05rem;
+}
+
+.section-head--light .section-head__body {
+  color: var(--concrete);
+}

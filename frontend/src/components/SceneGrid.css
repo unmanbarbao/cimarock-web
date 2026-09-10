@@ -1,0 +1,84 @@
+.scene-grid__filters {
+  display: grid;
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.scene-grid__filters .meta {
+  margin-bottom: 0.5rem;
+  color: var(--gold);
+}
+
+.scene-grid__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.scene-grid__chips button {
+  border: 1px solid rgba(242, 239, 230, 0.3);
+  background: transparent;
+  color: var(--paper);
+  padding: 0.45rem 0.75rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.scene-grid__chips button.is-active,
+.scene-grid__chips button:hover {
+  background: var(--gold);
+  border-color: var(--gold);
+  color: var(--ink);
+}
+
+.scene-grid__list {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+}
+
+.scene-grid__card {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.scene-grid__info .display {
+  font-size: 1.8rem;
+}
+
+.scene-grid__info p {
+  color: var(--dust);
+  font-size: 0.85rem;
+}
+
+@media (min-width: 700px) {
+  .scene-grid__list {
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  .scene-grid__card--1 {
+    grid-column: span 7;
+  }
+
+  .scene-grid__card--2 {
+    grid-column: span 5;
+  }
+
+  .scene-grid__card--3 {
+    grid-column: span 4;
+  }
+
+  .scene-grid__card:nth-child(3n + 1) {
+    grid-column: span 7;
+  }
+
+  .scene-grid__card:nth-child(3n + 2) {
+    grid-column: span 5;
+  }
+
+  .scene-grid__card:nth-child(3n) {
+    grid-column: span 12;
+  }
+}

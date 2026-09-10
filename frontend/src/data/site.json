@@ -1,0 +1,36 @@
+{
+  "seasonMode": "pre",
+  "seasonLabel": "Pre-festival",
+  "conceptLine": "El rock también nace en el llano.",
+  "territory": ["YOPAL", "CASANARE", "LLANO", "ESCENA", "CIMA"],
+  "nav": [
+    { "label": "Inicio", "to": "/" },
+    { "label": "Festival", "to": "/festival" },
+    { "label": "Escena", "to": "/escena" },
+    { "label": "Convocatorias", "to": "/convocatorias" },
+    { "label": "Memoria", "to": "/memoria" },
+    { "label": "Journal", "to": "/journal" },
+    { "label": "Corporación", "to": "/corporacion" }
+  ],
+  "footerNav": [
+    { "label": "Historia", "to": "/historia" },
+    { "label": "Aliados", "to": "/aliados" },
+    { "label": "Contacto", "to": "/contacto" },
+    { "label": "Transparencia", "to": "/corporacion#transparencia" }
+  ],
+  "contact": {
+    "email": "hola@cimarock.co",
+    "whatsapp": "573001112233",
+    "city": "Yopal, Casanare",
+    "instagram": "@cimarock"
+  },
+  "homeModules": [
+    "edition",
+    "artists",
+    "scene",
+    "memory",
+    "journal",
+    "call",
+    "allies"
+  ]
+}

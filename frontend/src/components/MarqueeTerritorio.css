@@ -1,0 +1,26 @@
+.marquee {
+  overflow: hidden;
+  background: var(--gold);
+  color: var(--ink);
+  border-block: 2px solid var(--ink);
+  padding: 0.55rem 0;
+}
+
+.marquee__track {
+  display: flex;
+  width: max-content;
+  animation: marquee 28s linear infinite;
+  gap: 0;
+}
+
+.marquee__track span {
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  padding-inline: 0.5rem;
+  white-space: nowrap;
+}
+
+.marquee__track em {
+  font-style: normal;
+  margin-left: 0.75rem;
+  opacity: 0.45;
+}

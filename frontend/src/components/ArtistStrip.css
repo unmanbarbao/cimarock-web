@@ -1,0 +1,71 @@
+.artist-strip {
+  padding: var(--space-8) 0;
+  overflow: hidden;
+}
+
+.artist-strip__head {
+  margin-bottom: 1.5rem;
+}
+
+.artist-strip__head .display {
+  font-size: clamp(2.4rem, 5vw, 3.8rem);
+  margin-top: 0.35rem;
+}
+
+.artist-strip__head .meta {
+  color: var(--gold);
+}
+
+.artist-strip__row {
+  display: flex;
+  gap: 0.85rem;
+  overflow-x: auto;
+  padding: 0 1rem 1rem;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.artist-strip__item {
+  flex: 0 0 min(72vw, 220px);
+  scroll-snap-align: start;
+  position: relative;
+  transition: transform 0.25s var(--ease);
+}
+
+.artist-strip__item:hover {
+  transform: translateY(-6px);
+}
+
+.artist-strip__meta {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 4;
+  padding: 1rem;
+  background: linear-gradient(transparent, rgba(10, 10, 10, 0.92));
+}
+
+.artist-strip__meta .display {
+  font-size: 1.6rem;
+}
+
+.artist-strip__meta p {
+  font-size: 0.75rem;
+  color: var(--dust);
+  margin-top: 0.2rem;
+}
+
+.artist-strip__item .photo-frame__label {
+  opacity: 0;
+}
+
+@media (min-width: 900px) {
+  .artist-strip__row {
+    padding-inline: max(1rem, calc((100vw - 1280px) / 2 + 1rem));
+  }
+
+  .artist-strip__item {
+    flex-basis: 200px;
+  }
+}

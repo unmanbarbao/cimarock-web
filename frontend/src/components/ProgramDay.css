@@ -1,0 +1,48 @@
+.program-day {
+  display: grid;
+  gap: 2.5rem;
+}
+
+.program-day__stage-name {
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  color: var(--gold);
+  margin-bottom: 1rem;
+  border-bottom: 2px solid var(--gold);
+  padding-bottom: 0.35rem;
+}
+
+.program-day__days {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.program-day__day .meta {
+  color: var(--magenta);
+  margin-bottom: 0.75rem;
+}
+
+.program-day__day li {
+  display: grid;
+  grid-template-columns: 4.5rem 1fr;
+  gap: 1rem;
+  padding: 0.85rem 0;
+  border-bottom: 1px solid rgba(242, 239, 230, 0.12);
+  font-size: 1.05rem;
+}
+
+.program-day__day li span {
+  color: var(--dust);
+  font-variant-numeric: tabular-nums;
+}
+
+.program-day__day li strong {
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+@media (min-width: 800px) {
+  .program-day__days {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+}

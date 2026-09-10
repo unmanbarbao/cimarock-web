@@ -1,0 +1,158 @@
+{
+  "currentYear": 2026,
+  "editions": [
+    {
+      "year": 2026,
+      "title": "CimaRock 2026",
+      "status": "upcoming",
+      "dates": "12–13 de septiembre",
+      "venue": "Parque La Esperanza, Yopal",
+      "tagline": "Una escena. Un territorio. Una cima.",
+      "poster": { "label": "Cartel oficial CimaRock 2026", "tone": "gold", "src": "/placeholders/poster-1.jpg" },
+      "artistSlugs": [
+        "los-llanos-duros",
+        "bruja-de-sabana",
+        "cemento-rojo",
+        "tormenta-seca",
+        "orilla-negra",
+        "mata-de-ruido"
+      ],
+      "stages": [
+        {
+          "name": "Escenario Cima",
+          "days": [
+            {
+              "day": "Sábado 12",
+              "slots": [
+                { "time": "16:00", "artist": "Casa Abierta" },
+                { "time": "17:30", "artist": "Orilla Negra" },
+                { "time": "19:00", "artist": "Bruja de Sabana" },
+                { "time": "21:00", "artist": "Tormenta Seca" }
+              ]
+            },
+            {
+              "day": "Domingo 13",
+              "slots": [
+                { "time": "15:30", "artist": "Kilómetro Cero" },
+                { "time": "17:00", "artist": "Mata de Ruido" },
+                { "time": "18:30", "artist": "Cemento Rojo" },
+                { "time": "20:30", "artist": "Los Llanos Duros" }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Escenario Llano",
+          "days": [
+            {
+              "day": "Sábado 12",
+              "slots": [
+                { "time": "16:30", "artist": "Sesión emergente A" },
+                { "time": "18:00", "artist": "Sesión emergente B" }
+              ]
+            },
+            {
+              "day": "Domingo 13",
+              "slots": [
+                { "time": "16:00", "artist": "Jam abierta" },
+                { "time": "18:00", "artist": "Cierre comunitario" }
+              ]
+            }
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "¿La entrada es gratuita?",
+          "a": "Sí. CimaRock es un festival de acceso libre impulsado por la Corporación. Cupo sujeto a aforo."
+        },
+        {
+          "q": "¿Hay zona de comida?",
+          "a": "Habrá oferta local de comida y bebidas. Se priorizan emprendimientos de Yopal y el departamento."
+        },
+        {
+          "q": "¿Puedo llevar silla o nevera?",
+          "a": "Consulta la guía de asistentes publicada cerca de la fecha. Priorizamos seguridad y circulación."
+        }
+      ],
+      "attendeeInfo": [
+        "Llega temprano: el aforo es limitado.",
+        "Hidratación y bloqueador: sol llanero real.",
+        "Respeta artistas, público y vecinos del parque.",
+        "Punto de información junto al Escenario Cima."
+      ]
+    },
+    {
+      "year": 2025,
+      "title": "CimaRock 2025",
+      "status": "archive",
+      "dates": "Septiembre 2025",
+      "venue": "Yopal",
+      "highlight": "Consolidación de la Corporación y archivo fotográfico ampliado.",
+      "poster": { "label": "Cartel CimaRock 2025", "tone": "magenta", "src": "/placeholders/stage-1.jpg" },
+      "artistSlugs": ["bruja-de-sabana", "cemento-rojo", "tormenta-seca", "orilla-negra"],
+      "stats": { "bands": 18, "audience": "2.5K+", "stages": 2 }
+    },
+    {
+      "year": 2024,
+      "title": "CimaRock 2024",
+      "status": "archive",
+      "dates": "2024",
+      "venue": "Yopal",
+      "highlight": "Crece la convocatoria abierta y el Journal de escena.",
+      "poster": { "label": "Cartel CimaRock 2024", "tone": "1", "src": "/placeholders/lights-1.jpg" },
+      "artistSlugs": ["los-llanos-duros", "bruja-de-sabana", "mata-de-ruido"],
+      "stats": { "bands": 14, "audience": "2K+", "stages": 2 }
+    },
+    {
+      "year": 2023,
+      "title": "CimaRock 2023",
+      "status": "archive",
+      "dates": "2023",
+      "venue": "Yopal",
+      "highlight": "Alianzas institucionales y foco en bandas del departamento.",
+      "poster": { "label": "Cartel CimaRock 2023", "tone": "2", "src": "/placeholders/crowd-1.jpg" },
+      "artistSlugs": ["los-llanos-duros", "casa-abierta", "mata-de-ruido"]
+    },
+    {
+      "year": 2022,
+      "title": "CimaRock 2022",
+      "status": "archive",
+      "dates": "2022",
+      "venue": "Yopal",
+      "highlight": "Regreso post-pandemia con energía renovada.",
+      "poster": { "label": "Cartel CimaRock 2022", "tone": "3", "src": "/placeholders/band-1.jpg" },
+      "artistSlugs": ["cemento-rojo", "tormenta-seca"]
+    },
+    {
+      "year": 2021,
+      "title": "CimaRock 2021",
+      "status": "archive",
+      "dates": "2021",
+      "venue": "Yopal",
+      "highlight": "Formato adaptado; se sostiene la comunidad.",
+      "poster": { "label": "Cartel CimaRock 2021", "tone": "4", "src": "/placeholders/guitar-1.jpg" },
+      "artistSlugs": ["mata-de-ruido"]
+    },
+    {
+      "year": 2020,
+      "title": "CimaRock 2020",
+      "status": "archive",
+      "dates": "2020",
+      "venue": "Yopal",
+      "highlight": "Año de pausa y reinvención.",
+      "poster": { "label": "Archivo 2020", "tone": "5", "src": "/placeholders/backstage-1.jpg" },
+      "artistSlugs": []
+    },
+    {
+      "year": 2019,
+      "title": "CimaRock 2019",
+      "status": "archive",
+      "dates": "2019",
+      "venue": "Yopal",
+      "highlight": "Nace el Festival CimaRock en Yopal.",
+      "poster": { "label": "Primera edición 2019", "tone": "6", "src": "/placeholders/landscape-1.jpg" },
+      "artistSlugs": ["tormenta-seca"]
+    }
+  ]
+}

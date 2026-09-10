@@ -1,0 +1,57 @@
+.callout-conv {
+  background: var(--magenta);
+  color: var(--paper);
+  padding: var(--space-8) 0;
+}
+
+.callout-conv.is-closed {
+  background: var(--concrete);
+}
+
+.callout-conv__grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.callout-conv .meta {
+  color: rgba(242, 239, 230, 0.75);
+}
+
+.callout-conv__status {
+  font-size: clamp(3.5rem, 12vw, 7rem);
+  line-height: 0.85;
+  margin: 0.4rem 0;
+}
+
+.callout-conv__status.open {
+  color: var(--ink);
+}
+
+.callout-conv__title {
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  max-width: 14ch;
+}
+
+.callout-conv__deadline {
+  margin: 1rem 0 1.5rem;
+}
+
+.callout-conv .btn--primary {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--paper);
+}
+
+.callout-conv .btn--primary:hover {
+  background: var(--gold);
+  border-color: var(--gold);
+  color: var(--ink);
+}
+
+@media (min-width: 860px) {
+  .callout-conv__grid {
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: end;
+    gap: 3rem;
+  }
+}

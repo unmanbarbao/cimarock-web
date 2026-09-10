@@ -1,0 +1,76 @@
+{
+  "year": 2025,
+  "title": "Así se vivió CimaRock 2025",
+  "intro": "No es una galería de miniaturas. Es un relato visual: el calor, el polvo, el bajo, las manos al aire y la ciudad que se reconoce en su escena.",
+  "spreads": [
+    {
+      "id": "apertura",
+      "layout": "hero-dual",
+      "caption": "La tarde cae sobre el parque. El Escenario Cima prende.",
+      "photos": [
+        {
+          "label": "Público llegando al parque",
+          "tone": "1",
+          "size": "xl",
+          "src": "/placeholders/crowd-2.jpg"
+        },
+        {
+          "label": "Detalle de amplificadores",
+          "tone": "2",
+          "size": "md",
+          "src": "/placeholders/amp-1.jpg"
+        }
+      ]
+    },
+    {
+      "id": "energia",
+      "layout": "triptych",
+      "caption": "Hardcore, post-punk y metal: la cima se construye en capas.",
+      "photos": [
+        {
+          "label": "Saltos en el pogo",
+          "tone": "3",
+          "size": "lg",
+          "src": "/placeholders/crowd-1.jpg"
+        },
+        {
+          "label": "Guitarrista en contraluz",
+          "tone": "magenta",
+          "size": "md",
+          "src": "/placeholders/guitar-1.jpg"
+        },
+        {
+          "label": "Manos al cielo",
+          "tone": "gold",
+          "size": "md",
+          "src": "/placeholders/people-1.jpg"
+        }
+      ]
+    },
+    {
+      "id": "comunidad",
+      "layout": "editorial",
+      "caption": "Voluntarios, bandas, vecinos. La Corporación es gente.",
+      "photos": [
+        {
+          "label": "Equipo de producción",
+          "tone": "4",
+          "size": "lg",
+          "src": "/placeholders/team-1.jpg"
+        },
+        {
+          "label": "Puesto de hidratación",
+          "tone": "5",
+          "size": "sm",
+          "src": "/placeholders/people-2.jpg"
+        },
+        {
+          "label": "Abrazo post-set",
+          "tone": "6",
+          "size": "sm",
+          "src": "/placeholders/band-2.jpg"
+        }
+      ]
+    }
+  ]
+}

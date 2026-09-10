@@ -1,0 +1,68 @@
+.hero-afiche {
+  position: relative;
+  min-height: min(92vh, 860px);
+  display: grid;
+  align-items: end;
+  overflow: hidden;
+  background: var(--ink);
+}
+
+.hero-afiche__media {
+  position: absolute;
+  inset: 0;
+}
+
+.hero-afiche__photo {
+  height: 100%;
+  width: 100%;
+  clip-path: none;
+  aspect-ratio: auto !important;
+}
+
+.hero-afiche__photo .photo-frame__img {
+  filter: contrast(1.08) saturate(0.85) brightness(0.72);
+}
+
+.hero-afiche__photo .photo-frame__inner {
+  background: linear-gradient(
+    180deg,
+    rgba(10, 10, 10, 0.25) 0%,
+    rgba(10, 10, 10, 0.55) 45%,
+    rgba(10, 10, 10, 0.92) 100%
+  );
+  align-items: flex-start;
+  padding-top: 1.25rem;
+}
+
+.hero-afiche__content {
+  position: relative;
+  z-index: 3;
+  padding-bottom: clamp(2.5rem, 8vw, 5rem);
+  padding-top: 6rem;
+}
+
+.hero-afiche__title {
+  font-size: clamp(4.2rem, 16vw, 11rem);
+  color: var(--paper);
+  margin: 0.4rem 0 0.5rem;
+  max-width: 12ch;
+}
+
+.hero-afiche__sub {
+  font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+  color: var(--gold);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.hero-afiche__ctas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.75rem;
+}
+
+.hero-afiche .meta {
+  color: var(--magenta);
+}
