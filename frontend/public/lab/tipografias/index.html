@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <title>Lab tipografías — CimaRock</title>
+    <link rel="icon" type="image/png" href="/brand/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Fuentes en uso + alternativas de display / editorial / UI -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Anton&family=Archivo+Black&family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600;700&family=Bebas+Neue&family=Big+Shoulders+Display:wght@700;800&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Figtree:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=IBM+Plex+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=League+Spartan:wght@600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&family=Manrope:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=Oswald:wght@500;600;700&family=Outfit:wght@400;500;600;700&family=Passion+One:wght@400;700&family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Public+Sans:wght@400;500;600;700&family=Russo+One&family=Source+Sans+3:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Space+Grotesk:wght@400;500;600;700&family=Spectral:ital,wght@0,400;0,600;1,400&family=Staatliches&family=Teko:wght@500;600;700&family=Work+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="lab-top">
+      <a class="lab-back" href="/">← Sitio</a>
+      <div class="lab-top__brand">
+        <p class="lab-kicker">Anexo de laboratorio</p>
+        <h1 class="lab-title">Tipografías CimaRock</h1>
+      </div>
+      <p class="lab-top__note">
+        Trío actual marcado · Mezclá roles abajo · No afecta el sitio
+      </p>
+    </header>
+
+    <section class="stack-now">
+      <div class="stack-now__head">
+        <p class="lab-kicker">En uso hoy</p>
+        <h2>Display + editorial + UI</h2>
+      </div>
+      <div class="stack-now__grid" id="current-stack"></div>
+    </section>
+
+    <section class="mixer">
+      <div class="mixer__head">
+        <p class="lab-kicker">Mezclador</p>
+        <h2>Armá un trío y miralo en contexto</h2>
+      </div>
+      <div class="mixer__controls" id="mixer-controls"></div>
+      <article class="mock" id="live-mock" aria-live="polite">
+        <p class="mock__meta">Yopal · Casanare · Edición 2026</p>
+        <h3 class="mock__display">CIMAROCK</h3>
+        <p class="mock__sub">El rock también nace en el llano.</p>
+        <blockquote class="mock__quote">
+          Una escena. Un territorio. Una cima. Festival, movimiento y archivo
+          vivo desde el llano.
+        </blockquote>
+        <p class="mock__body">
+          CimaRock es casa digital para la música alternativa de Casanare.
+          Impulsamos escena, memoria y una Corporación que sostiene lo que el
+          escenario enciende. Convocatorias abiertas, cartel en construcción y
+          memoria editorial de cada edición.
+        </p>
+        <div class="mock__actions">
+          <span class="mock__btn mock__btn--fill">Ver edición</span>
+          <span class="mock__btn">Quiero tocar</span>
+        </div>
+      </article>
+      <div class="presets">
+        <p class="lab-kicker">Presets rápidos</p>
+        <div class="presets__row" id="presets"></div>
+      </div>
+    </section>
+
+    <section class="catalog">
+      <div class="catalog__head">
+        <p class="lab-kicker">Catálogo</p>
+        <h2>Opciones por rol</h2>
+        <p class="catalog__lede">
+          Cada muestra usa copy real de CimaRock. Tocá una tarjeta para
+          aplicarla al mezclador.
+        </p>
+      </div>
+
+      <div class="role-block" data-role="display">
+        <h3 class="role-block__title">Display <span>— titulares, afiche, nav</span></h3>
+        <div class="cards" id="cards-display"></div>
+      </div>
+
+      <div class="role-block" data-role="editorial">
+        <h3 class="role-block__title">
+          Editorial <span>— citas, crónicas, pull quotes</span>
+        </h3>
+        <div class="cards" id="cards-editorial"></div>
+      </div>
+
+      <div class="role-block" data-role="ui">
+        <h3 class="role-block__title">
+          UI / cuerpo <span>— párrafos, meta, formularios</span>
+        </h3>
+        <div class="cards" id="cards-ui"></div>
+      </div>
+    </section>
+
+    <footer class="lab-foot">
+      <p>
+        Fuentes vía Google Fonts · Lab local en
+        <code>/lab/tipografias/</code>
+      </p>
+    </footer>
+
+    <script src="./app.js" type="module"></script>
+  </body>
+</html>

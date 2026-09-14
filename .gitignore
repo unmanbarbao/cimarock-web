@@ -82,3 +82,6 @@ backend/__pycache__/
 # Frontend
 frontend/dist/
 frontend/node_modules/
+
+# Netlify CLI (enlace local del sitio)
+.netlify/
