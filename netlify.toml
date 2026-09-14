@@ -1,12 +1,15 @@
-# Netlify — mockup CimaRock
-# Base directory en UI: frontend (o dejar vacío si el build usa este archivo desde raíz)
+# CimaRock — deploy manual (sin build en Netlify)
+#
+# El sitio se construye en local y se sube con Netlify CLI.
+# `ignore = "exit 0"` cancela cualquier build automático para no gastar minutos.
+#
+#   npm --prefix frontend run deploy
 
 [build]
-  base = "frontend"
-  command = "npm run build"
-  publish = "dist"
+  ignore = "exit 0"
+  publish = "frontend/dist"
 
-# SPA React Router
+# SPA React Router (labs cubiertos en frontend/public/_redirects)
 [[redirects]]
   from = "/*"
   to = "/index.html"
