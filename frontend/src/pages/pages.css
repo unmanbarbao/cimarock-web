@@ -94,6 +94,20 @@
   text-align: center;
 }
 
+.home-closer__inner {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  justify-items: center;
+  gap: 1rem;
+}
+
+.home-closer__logo {
+  width: min(11rem, 48vw);
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
 .home-closer__quote {
   position: relative;
   z-index: 2;
@@ -105,7 +119,7 @@
 .home-closer .meta {
   position: relative;
   z-index: 2;
-  color: var(--gold);
+  color: var(--blood);
 }
 
 .fest-hero {
@@ -275,7 +289,7 @@
 }
 
 .conv-hero.is-open {
-  background: var(--magenta);
+  background: var(--blood);
   color: var(--paper);
 }
 

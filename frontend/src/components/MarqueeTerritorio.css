@@ -1,6 +1,6 @@
 .marquee {
   overflow: hidden;
-  background: var(--gold);
+  background: var(--blood);
   color: var(--ink);
   border-block: 2px solid var(--ink);
   padding: 0.55rem 0;
