@@ -127,7 +127,14 @@ export default function Home() {
       <CalloutConvocatoria call={calls.active} />
       <AllyWall partners={partners.slice(0, 6)} />
       <section className="home-closer texture-brick">
-        <div className="container">
+        <div className="container home-closer__inner">
+          <img
+            className="home-closer__logo"
+            src="/brand/logo-red.png"
+            alt="Corporación CimaRock"
+            width={220}
+            height={220}
+          />
           <p className="editorial home-closer__quote">{site.conceptLine}</p>
           <p className="meta">Corporación Festival CimaRock · Yopal</p>
         </div>

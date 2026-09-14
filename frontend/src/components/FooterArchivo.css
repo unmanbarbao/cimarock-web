@@ -18,6 +18,12 @@
   color: var(--gold);
 }
 
+.footer-archivo__mark {
+  width: min(9.5rem, 42vw);
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
 .footer-archivo__line {
   font-size: 1.35rem;
   margin: 0.75rem 0 1rem;

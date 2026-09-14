@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import site from "../data/site.json";
+import BrandLogo from "./BrandLogo";
 import "./FooterArchivo.css";
 
 export default function FooterArchivo() {
@@ -7,7 +8,7 @@ export default function FooterArchivo() {
     <footer className="footer-archivo texture-brick">
       <div className="footer-archivo__inner container">
         <div className="footer-archivo__brand">
-          <p className="display footer-archivo__logo">CIMAROCK</p>
+          <BrandLogo variant="red" className="footer-archivo__mark" />
           <p className="editorial footer-archivo__line">{site.conceptLine}</p>
           <p className="meta">Yopal · Casanare · Colombia</p>
         </div>

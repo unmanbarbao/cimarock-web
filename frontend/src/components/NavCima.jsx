@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import site from "../data/site.json";
+import BrandLogo from "./BrandLogo";
 import "./NavCima.css";
 
 export default function NavCima() {
@@ -16,8 +17,13 @@ export default function NavCima() {
   return (
     <header className="nav-cima">
       <div className="nav-cima__bar container-wide">
-        <Link to="/" className="nav-cima__brand display" onClick={() => setOpen(false)}>
-          CIMAROCK
+        <Link
+          to="/"
+          className="nav-cima__brand"
+          onClick={() => setOpen(false)}
+          aria-label="CimaRock — inicio"
+        >
+          <BrandLogo variant="red" className="nav-cima__logo" />
         </Link>
         <nav className="nav-cima__desktop" aria-label="Principal">
           {site.nav.map((item) => (
@@ -38,6 +44,9 @@ export default function NavCima() {
         </button>
       </div>
       <div className={`nav-cima__drawer texture-brick ${open ? "is-open" : ""}`}>
+        <div className="nav-cima__drawer-logo">
+          <BrandLogo variant="red" className="nav-cima__logo--drawer" />
+        </div>
         <nav className="nav-cima__mobile" aria-label="Móvil">
           {site.nav.map((item) => (
             <NavLink
