@@ -7,7 +7,7 @@ export default function AllyWall({ partners, title = "Aliados de la cima" }) {
         <p className="meta">Quienes sostienen la escena</p>
         <h2 className="display ally-wall__title">{title}</h2>
         <p className="ally-wall__copy">
-          Asociarse con CimaRock es apoyar la cultura y la música alternativa del
+          Asociarse con Cimarock es apoyar la cultura y la música alternativa del
           llano — no es solo un logo en un afiche.
         </p>
         <div className="ally-wall__grid">

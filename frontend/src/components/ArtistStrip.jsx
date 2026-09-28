@@ -22,7 +22,6 @@ export default function ArtistStrip({ artists, title, eyebrow }) {
           >
             <PhotoFrame
               label={artist.photo.label}
-              tone={artist.photo.tone}
               src={artist.photo.src}
               aspect="3/4"
             />

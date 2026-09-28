@@ -1,8 +1,8 @@
-/** Wordmark oficial Corporación CimaRock */
+/** Wordmark oficial Corporación Cimarock */
 export default function BrandLogo({
   variant = "red",
   className = "",
-  title = "Corporación CimaRock",
+  title = "Corporación Cimarock",
 }) {
   const src =
     variant === "cream"

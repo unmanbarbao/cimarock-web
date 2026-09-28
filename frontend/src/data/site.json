@@ -1,7 +1,7 @@
 {
-  "seasonMode": "pre",
-  "seasonLabel": "Pre-festival",
-  "conceptLine": "El rock también nace en el llano.",
+  "seasonMode": "post",
+  "seasonLabel": "Post-festival",
+  "conceptLine": "El Llano también suena diferente.",
   "territory": ["YOPAL", "CASANARE", "LLANO", "ESCENA", "CIMA"],
   "nav": [
     { "label": "Inicio", "to": "/" },
@@ -9,27 +9,27 @@
     { "label": "Escena", "to": "/escena" },
     { "label": "Convocatorias", "to": "/convocatorias" },
     { "label": "Memoria", "to": "/memoria" },
-    { "label": "Journal", "to": "/journal" },
     { "label": "Corporación", "to": "/corporacion" }
   ],
   "footerNav": [
     { "label": "Historia", "to": "/historia" },
     { "label": "Aliados", "to": "/aliados" },
-    { "label": "Contacto", "to": "/contacto" },
-    { "label": "Transparencia", "to": "/corporacion#transparencia" }
+    { "label": "Contacto", "to": "/contacto" }
   ],
   "contact": {
-    "email": "hola@cimarock.co",
-    "whatsapp": "573001112233",
+    "email": "contacto@cimarock.com",
+    "phone": "+57 310 2733069",
+    "whatsapp": "573102733069",
+    "address": "Cra. 21 #8-41, Barrio Centro",
     "city": "Yopal, Casanare",
-    "instagram": "@cimarock"
+    "instagram": "@festivalcimarock",
+    "instagramUrl": "https://www.instagram.com/festivalcimarock/"
   },
   "homeModules": [
     "edition",
     "artists",
     "scene",
     "memory",
-    "journal",
     "call",
     "allies"
   ]

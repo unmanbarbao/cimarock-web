@@ -10,7 +10,6 @@ import Convocatorias from "./pages/Convocatorias";
 import Historia from "./pages/Historia";
 import Memoria from "./pages/Memoria";
 import MemoriaYear from "./pages/MemoriaYear";
-import Journal from "./pages/Journal";
 import Corporacion from "./pages/Corporacion";
 import Aliados from "./pages/Aliados";
 import Contacto from "./pages/Contacto";
@@ -30,7 +29,6 @@ export default function App() {
           <Route path="/historia" element={<Historia />} />
           <Route path="/memoria" element={<Memoria />} />
           <Route path="/memoria/:year" element={<MemoriaYear />} />
-          <Route path="/journal" element={<Journal />} />
           <Route path="/corporacion" element={<Corporacion />} />
           <Route path="/aliados" element={<Aliados />} />
           <Route path="/contacto" element={<Contacto />} />

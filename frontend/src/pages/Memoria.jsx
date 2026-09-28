@@ -13,8 +13,8 @@ export default function Memoria() {
           <p className="meta">Archivo vivo</p>
           <h1 className="display">Memoria</h1>
           <p className="page-hero__lead editorial">
-            Experiencias editoriales por edición. Fotografías grandes, narrativa
-            visual — no un mosaico de miniaturas.
+            Cada edición del Festival Cimarock es un capítulo de la escena
+            alternativa de Casanare: sus afiches, sus carteles y sus escenarios.
           </p>
         </div>
       </header>
@@ -24,12 +24,13 @@ export default function Memoria() {
             <article key={ed.year} className="memoria-index__item">
               <PhotoFrame
                 label={ed.poster.label}
-                tone={ed.poster.tone}
                 src={ed.poster.src}
-                aspect="4/5"
+                aspect="3/4"
               />
               <div>
-                <p className="meta">{ed.dates}</p>
+                <p className="meta">
+                  {ed.dates} · {ed.venue}
+                </p>
                 <h2 className="display">Así se vivió {ed.title}</h2>
                 <p>{ed.highlight}</p>
                 <Button to={`/memoria/${ed.year}`} variant="ghost">

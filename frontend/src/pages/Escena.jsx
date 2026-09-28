@@ -11,8 +11,8 @@ export default function Escena() {
           <p className="meta">Directorio</p>
           <h1 className="display">La escena</h1>
           <p className="page-hero__lead editorial">
-            CimaRock no solamente contrata artistas: ayuda a construir una
-            escena. Este directorio es memoria viva y plataforma.
+            Del grunge y el thrash al joropo alternativo: artistas y proyectos
+            que hacen la música alternativa de Casanare.
           </p>
         </div>
       </header>

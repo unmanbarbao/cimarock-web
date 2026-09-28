@@ -1,5 +1,6 @@
 import { useState } from "react";
 import calls from "../data/calls.json";
+import site from "../data/site.json";
 import { Button, SectionHead } from "../components/ui";
 import WhatsAppFloat from "../components/WhatsAppFloat";
 import "./pages.css";
@@ -13,45 +14,78 @@ export default function Convocatorias() {
     <div className="page-conv">
       <header className={`conv-hero ${open ? "is-open" : ""}`}>
         <div className="container">
-          <p className="meta">Convocatoria {call.edition}</p>
+          <p className="meta">
+            {call.edition ? `Convocatoria ${call.edition}` : "Convocatorias"}
+          </p>
           <p className="display conv-hero__status">{open ? "Abierta" : "Cerrada"}</p>
           <h1 className="display conv-hero__title">{call.title}</h1>
           <p className="conv-hero__lead">{call.summary}</p>
-          <p className="conv-hero__dates">
-            Apertura {call.opens} · Cierre <strong>{call.deadline}</strong>
-          </p>
+          {call.opens && call.deadline && (
+            <p className="conv-hero__dates">
+              Apertura {call.opens} · Cierre <strong>{call.deadline}</strong>
+            </p>
+          )}
         </div>
       </header>
 
-      <section className="fest-section">
-        <div className="container conv-grid">
-          <div>
-            <SectionHead eyebrow="Bases" title="Requisitos" />
-            <ul className="conv-list">
-              {call.requirements.map((r) => (
-                <li key={r}>{r}</li>
-              ))}
-            </ul>
-            <Button href={call.rulesPdf} variant="ghost">
-              Descargar reglamento (PDF)
-            </Button>
+      {(call.requirements || call.process) && (
+        <section className="fest-section">
+          <div className="container conv-grid">
+            {call.requirements && (
+              <div>
+                <SectionHead eyebrow="Bases" title="Requisitos" />
+                <ul className="conv-list">
+                  {call.requirements.map((r) => (
+                    <li key={r}>{r}</li>
+                  ))}
+                </ul>
+                {call.rulesPdf && (
+                  <Button href={call.rulesPdf} variant="ghost">
+                    Descargar reglamento (PDF)
+                  </Button>
+                )}
+              </div>
+            )}
+            {call.process && (
+              <div>
+                <SectionHead eyebrow="Proceso" title="Cómo se elige" />
+                <ol className="conv-process">
+                  {call.process.map((p) => (
+                    <li key={p.step}>
+                      <span className="display">{String(p.step).padStart(2, "0")}</span>
+                      <div>
+                        <h3>{p.title}</h3>
+                        <p>{p.text}</p>
+                      </div>
+                    </li>
+                  ))}
+                </ol>
+              </div>
+            )}
           </div>
-          <div>
-            <SectionHead eyebrow="Proceso" title="Cómo se elige" />
-            <ol className="conv-process">
-              {call.process.map((p) => (
-                <li key={p.step}>
-                  <span className="display">{String(p.step).padStart(2, "0")}</span>
-                  <div>
-                    <h3>{p.title}</h3>
-                    <p>{p.text}</p>
-                  </div>
-                </li>
-              ))}
-            </ol>
+        </section>
+      )}
+
+      {!open && (
+        <section className="fest-section">
+          <div className="container">
+            <SectionHead eyebrow="Mantente al tanto" title="Próximas convocatorias">
+              <p>
+                Publicamos cada convocatoria en nuestras redes. Si tienes un
+                proyecto musical en Casanare o la región, escríbenos.
+              </p>
+            </SectionHead>
+            <div className="conv-form__actions">
+              <Button href={site.contact.instagramUrl} variant="primary" target="_blank" rel="noreferrer">
+                {site.contact.instagram}
+              </Button>
+              <Button href={`mailto:${site.contact.email}`} variant="ghost">
+                {site.contact.email}
+              </Button>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
 
       {open && (
         <section className="conv-form-section">

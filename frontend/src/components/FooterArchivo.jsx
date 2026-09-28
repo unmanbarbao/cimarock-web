@@ -39,7 +39,17 @@ export default function FooterArchivo() {
               <li>
                 <a href={`mailto:${site.contact.email}`}>{site.contact.email}</a>
               </li>
-              <li>{site.contact.instagram}</li>
+              <li>
+                <a href={`tel:${site.contact.phone.replace(/\s/g, "")}`}>
+                  {site.contact.phone}
+                </a>
+              </li>
+              <li>
+                <a href={site.contact.instagramUrl} target="_blank" rel="noreferrer">
+                  {site.contact.instagram}
+                </a>
+              </li>
+              <li>{site.contact.address}</li>
               <li>{site.contact.city}</li>
             </ul>
           </div>
@@ -48,7 +58,7 @@ export default function FooterArchivo() {
       <div className="footer-archivo__bottom">
         <div className="container">
           <p>
-            Corporación Festival CimaRock — entidad cultural sin ánimo de lucro.
+            Corporación Cimarock — entidad cultural sin ánimo de lucro.
           </p>
         </div>
       </div>

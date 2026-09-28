@@ -1,10 +1,7 @@
 [
-  { "name": "Alcaldía de Yopal", "type": "institucion", "tone": "1" },
-  { "name": "Gobernación de Casanare", "type": "institucion", "tone": "2" },
-  { "name": "Cultura Local", "type": "cultural", "tone": "3" },
-  { "name": "Radio Alterna", "type": "medio", "tone": "4" },
-  { "name": "Sonido Llano", "type": "empresa", "tone": "5" },
-  { "name": "Escena Sur", "type": "cultural", "tone": "6" },
-  { "name": "Fundación Piedemonte", "type": "cultural", "tone": "gold" },
-  { "name": "Revista Ruido", "type": "medio", "tone": "magenta" }
+  { "name": "Unicentro Yopal", "type": "Aliado · 2025–2026", "tone": "1" },
+  { "name": "La Res", "type": "Invita · 2023", "tone": "2" },
+  { "name": "Tenis Colombianos", "type": "Aliado · 2023", "tone": "3" },
+  { "name": "Jawá", "type": "Escenario · 2023", "tone": "4" },
+  { "name": "Porky's Club", "type": "Escenario · 2022", "tone": "5" }
 ]

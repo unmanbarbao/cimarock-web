@@ -12,7 +12,7 @@ export default function Aliados() {
           <h1 className="display">Aliados</h1>
           <p className="page-hero__lead editorial">
             Patrocinadores, instituciones, empresas, medios y aliados culturales.
-            Apoyar a CimaRock es sostener la escena musical regional.
+            Apoyar a Cimarock es sostener la escena musical regional.
           </p>
           <div style={{ marginTop: "1.5rem" }}>
             <Button to="/contacto" variant="ink">

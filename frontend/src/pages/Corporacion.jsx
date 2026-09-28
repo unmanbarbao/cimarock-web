@@ -1,64 +1,50 @@
+import { Link } from "react-router-dom";
 import partners from "../data/partners.json";
-import { PhotoFrame, SectionHead, Button } from "../components/ui";
+import corporation from "../data/corporation.json";
+import { PhotoFrame, SectionHead } from "../components/ui";
 import AllyWall from "../components/AllyWall";
 import "./pages.css";
 
-const TEAM = [
-  {
-    name: "Dirección artística",
-    role: "Curaduría y programación",
-    tone: "1",
-    src: "/placeholders/people-1.jpg",
-  },
-  {
-    name: "Producción",
-    role: "Logística y escenarios",
-    tone: "2",
-    src: "/placeholders/stage-1.jpg",
-  },
-  {
-    name: "Comunicaciones",
-    role: "Narrativa y archivo",
-    tone: "3",
-    src: "/placeholders/backstage-1.jpg",
-  },
-  {
-    name: "Comunidad",
-    role: "Escena y convocatorias",
-    tone: "4",
-    src: "/placeholders/team-1.jpg",
-  },
-];
+function Paragraphs({ items }) {
+  const [first, ...rest] = items;
+  return (
+    <>
+      <p className="editorial">{first}</p>
+      {rest.map((p) => (
+        <p key={p} className="corp-mv__body">
+          {p}
+        </p>
+      ))}
+    </>
+  );
+}
 
 export default function Corporacion() {
+  const { about, mission, vision, purpose, activities, pillars, reason, history } =
+    corporation;
+
   return (
     <div className="page-corp">
       <header className="page-hero page-hero--ink">
         <div className="container">
           <p className="meta">Institucional</p>
           <h1 className="display">Corporación</h1>
-          <p className="page-hero__lead editorial">
-            Entidad cultural sin ánimo de lucro. Seria y profesional — sin
-            abandonar la identidad del festival.
-          </p>
+          <p className="page-hero__lead editorial">{corporation.summary}</p>
         </div>
       </header>
 
       <section className="corp-about">
         <div className="container corp-about__grid">
           <div>
-            <SectionHead eyebrow="Quiénes somos" title="Una cima con raíces" light>
-              <p>
-                La Corporación Festival CimaRock formaliza años de trabajo
-                colectivo en Yopal: festival, promoción de la escena alternativa
-                y construcción de memoria musical en Casanare.
-              </p>
+            <SectionHead eyebrow="Quiénes somos" title={corporation.name} light>
+              {about.slice(1).map((p) => (
+                <p key={p}>{p}</p>
+              ))}
             </SectionHead>
           </div>
           <PhotoFrame
-            label="Equipo y comunidad en el territorio"
-            tone="gold"
-            src="/placeholders/landscape-2.jpg"
+            label="El Yopo — Fabio Quintero"
+            src="/escena/el-yopo.jpg"
             aspect="4/5"
           />
         </div>
@@ -68,97 +54,77 @@ export default function Corporacion() {
         <div className="container corp-mv">
           <div>
             <p className="meta">Misión</p>
-            <p className="editorial">
-              Fortalecer la música alternativa del llano mediante el festival,
-              la circulación de artistas y el archivo cultural.
-            </p>
+            <Paragraphs items={mission} />
           </div>
           <div>
             <p className="meta">Visión</p>
-            <p className="editorial">
-              Que Casanare sea reconocido como territorio de escena viva,
-              independiente y conectada con Colombia.
-            </p>
+            <Paragraphs items={vision} />
           </div>
         </div>
       </section>
 
       <section className="fest-section scrape">
         <div className="container">
-          <SectionHead eyebrow="Proyectos" title="Más que un fin de semana" />
-          <ul className="corp-projects">
-            <li>
-              <span className="display">01</span>
-              <div>
-                <h3>Festival CimaRock</h3>
-                <p>Plataforma anual de presentación y encuentro.</p>
-              </div>
-            </li>
-            <li>
-              <span className="display">02</span>
-              <div>
-                <h3>Escena y convocatorias</h3>
-                <p>Acompañamiento a bandas emergentes del departamento.</p>
-              </div>
-            </li>
-            <li>
-              <span className="display">03</span>
-              <div>
-                <h3>Memoria y Journal</h3>
-                <p>Archivo fotográfico, crónicas y relatos de territorio.</p>
-              </div>
-            </li>
-          </ul>
+          <SectionHead eyebrow="Nuestro propósito" title={purpose.headline}>
+            {purpose.body.map((p) => (
+              <p key={p}>{p}</p>
+            ))}
+          </SectionHead>
         </div>
       </section>
 
       <section className="fest-section">
         <div className="container">
-          <SectionHead eyebrow="Equipo" title="Quienes hacen la cima" />
-          <div className="corp-team">
-            {TEAM.map((m) => (
-              <article key={m.name}>
-                <PhotoFrame
-                  label={`Retrato documental — ${m.name}`}
-                  tone={m.tone}
-                  src={m.src}
-                  aspect="1/1"
-                />
-                <h3 className="display">{m.name}</h3>
-                <p>{m.role}</p>
-              </article>
+          <SectionHead eyebrow="Qué hacemos" title="Más que un festival" />
+          <ul className="corp-projects">
+            {activities.map((a, i) => (
+              <li key={a.title}>
+                <span className="display">{String(i + 1).padStart(2, "0")}</span>
+                <div>
+                  {a.group && <p className="meta">{a.group}</p>}
+                  <h3>{a.title}</h3>
+                  <p>{a.text}</p>
+                </div>
+              </li>
             ))}
+          </ul>
+        </div>
+      </section>
+
+      <section className="fest-section scrape">
+        <div className="container">
+          <SectionHead eyebrow="Nuestros pilares" title="Lo que nos sostiene" />
+          <ul className="corp-projects corp-pillars">
+            {pillars.map((p, i) => (
+              <li key={p.title}>
+                <span className="display">{String(i + 1).padStart(2, "0")}</span>
+                <div>
+                  <h3>{p.title}</h3>
+                  <p>{p.text}</p>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      <section className="fest-section">
+        <div className="container corp-mv">
+          <div>
+            <p className="meta">Nuestra razón de ser</p>
+            <Paragraphs items={[reason.headline, ...reason.body]} />
+          </div>
+          <div>
+            <p className="meta">Historia</p>
+            <Paragraphs items={[history.headline, ...history.body]} />
+            <Link className="corp-link" to="/historia">
+              Ver línea de tiempo
+            </Link>
           </div>
         </div>
       </section>
 
-      <AllyWall partners={partners} title="Aliados institucionales" />
-
-      <section id="transparencia" className="fest-section">
-        <div className="container">
-          <SectionHead eyebrow="Transparencia" title="Documentos" />
-          <ul className="corp-docs">
-            <li>
-              <span>Estatutos de la Corporación</span>
-              <Button href="#" variant="ghost">
-                PDF
-              </Button>
-            </li>
-            <li>
-              <span>Informe de gestión (mockup)</span>
-              <Button href="#" variant="ghost">
-                PDF
-              </Button>
-            </li>
-            <li>
-              <span>Política de convocatorias</span>
-              <Button href="#" variant="ghost">
-                PDF
-              </Button>
-            </li>
-          </ul>
-        </div>
-      </section>
+      <AllyWall partners={partners} title="Aliados" />
     </div>
   );
 }

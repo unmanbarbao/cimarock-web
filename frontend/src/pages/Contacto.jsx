@@ -4,6 +4,7 @@ import WhatsAppFloat from "../components/WhatsAppFloat";
 import "./pages.css";
 
 export default function Contacto() {
+  const { contact } = site;
   return (
     <div className="page-contacto">
       <header className="page-hero page-hero--ink texture-brick">
@@ -11,7 +12,7 @@ export default function Contacto() {
           <p className="meta">Habla con nosotros</p>
           <h1 className="display">Contacto</h1>
           <p className="page-hero__lead editorial">
-            Simple, directo, con la misma piel visual de la casa digital.
+            Artistas, aliados, instituciones y público: escríbenos.
           </p>
         </div>
       </header>
@@ -21,7 +22,12 @@ export default function Contacto() {
             className="conv-form contacto-form"
             onSubmit={(e) => {
               e.preventDefault();
-              alert("Mockup: mensaje enviado.");
+              const data = new FormData(e.currentTarget);
+              const subject = encodeURIComponent(`Contacto web — ${data.get("name")}`);
+              const body = encodeURIComponent(
+                `${data.get("message")}\n\n${data.get("name")} · ${data.get("email")}`
+              );
+              window.location.href = `mailto:${contact.email}?subject=${subject}&body=${body}`;
             }}
           >
             <label>
@@ -43,12 +49,23 @@ export default function Contacto() {
           <aside className="contacto-aside">
             <p className="meta">Directo</p>
             <p>
-              <a href={`mailto:${site.contact.email}`}>{site.contact.email}</a>
+              <a href={`mailto:${contact.email}`}>{contact.email}</a>
             </p>
-            <p>{site.contact.instagram}</p>
-            <p>{site.contact.city}</p>
+            <p>
+              <a href={`tel:${contact.phone.replace(/\s/g, "")}`}>{contact.phone}</a>
+            </p>
+            <p>
+              <a href={contact.instagramUrl} target="_blank" rel="noreferrer">
+                {contact.instagram}
+              </a>
+            </p>
+            <p>
+              {contact.address}
+              <br />
+              {contact.city}
+            </p>
             <Button
-              href={`https://wa.me/${site.contact.whatsapp}`}
+              href={`https://wa.me/${contact.whatsapp}`}
               variant="magenta"
             >
               WhatsApp

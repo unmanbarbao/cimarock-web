@@ -7,7 +7,9 @@ export default function CalloutConvocatoria({ call }) {
     <section className={`callout-conv ${open ? "is-open" : "is-closed"}`}>
       <div className="container callout-conv__grid">
         <div>
-          <p className="meta">Convocatoria {call.edition}</p>
+          <p className="meta">
+            {call.edition ? `Convocatoria ${call.edition}` : "Convocatorias"}
+          </p>
           <p className={`display callout-conv__status ${open ? "open" : ""}`}>
             {open ? "Abierta" : "Cerrada"}
           </p>
@@ -15,11 +17,13 @@ export default function CalloutConvocatoria({ call }) {
         </div>
         <div>
           <p>{call.summary}</p>
-          <p className="callout-conv__deadline">
-            Cierre: <strong>{call.deadline}</strong>
-          </p>
+          {call.deadline && (
+            <p className="callout-conv__deadline">
+              Cierre: <strong>{call.deadline}</strong>
+            </p>
+          )}
           <Button to="/convocatorias" variant={open ? "primary" : "ghost"}>
-            {open ? "Inscribirme" : "Ver bases"}
+            {open ? "Inscribirme" : "Más información"}
           </Button>
         </div>
       </div>

@@ -63,9 +63,14 @@ Las rutas de React Router quedan cubiertas por `frontend/public/_redirects` y `n
 
 - Vite + React + React Router
 - CSS variables (design tokens)
-- Datos estáticos JSON (modelo preparado para CMS)
-- Placeholders fotográficos en `frontend/public/placeholders/` (sustituir por archivo real de CimaRock)
+- Datos estáticos JSON en `frontend/src/data/` (modelo preparado para CMS)
 
 ## Contenido
 
-Los mockups usan fotografía placeholder. Sustituir por material documental real de CimaRock cuando esté disponible.
+La información oficial entregada por la Corporación está en `datos/` (textos de corporación, escena y contacto, fotos de artistas y afiches por edición). El sitio la consume desde:
+
+- `frontend/src/data/corporation.json` — quiénes somos, misión, visión, propósito, pilares, historia
+- `frontend/src/data/artists.json` — directorio de la escena (fotos en `frontend/public/escena/`)
+- `frontend/src/data/editions.json` — ediciones 2022, 2023, 2025 y 2026 según los afiches (en `frontend/public/flyers/`)
+- `frontend/src/data/site.json` — contacto y navegación
+- `frontend/src/data/partners.json` — aliados que aparecen en los afiches

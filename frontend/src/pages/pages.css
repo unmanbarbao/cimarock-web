@@ -27,6 +27,12 @@
   color: var(--dust);
 }
 
+.page-hero__body {
+  max-width: 40rem;
+  margin-top: 1rem;
+  color: var(--dust);
+}
+
 .page-hero--paper .page-hero__lead {
   color: var(--concrete);
 }
@@ -58,33 +64,6 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 0.65rem;
   margin-bottom: 1.5rem;
-}
-
-.home-journal {
-  background: var(--paper);
-  color: var(--ink);
-  padding: var(--space-8) 0;
-}
-
-.home-journal__list {
-  display: grid;
-  gap: 1.5rem;
-  margin-bottom: 1.75rem;
-}
-
-.home-journal__item {
-  border-top: 2px solid var(--ink);
-  padding-top: 1rem;
-}
-
-.home-journal__item .editorial {
-  font-size: 1.6rem;
-  margin: 0.4rem 0 0.5rem;
-}
-
-.home-journal__item p:last-child {
-  color: var(--concrete);
-  font-size: 0.95rem;
 }
 
 .home-closer {
@@ -450,37 +429,9 @@
   margin-bottom: 1rem;
 }
 
-.journal-list {
-  display: grid;
-  gap: 2.5rem;
-}
-
-.journal-card {
-  display: grid;
-  gap: 1rem;
-}
-
-.journal-card .editorial {
-  font-size: clamp(1.6rem, 3vw, 2.2rem);
-  margin: 0.4rem 0 0.65rem;
-  color: var(--paper);
-}
-
-.page-journal .journal-card .editorial {
-  color: var(--paper);
-}
-
-.page-journal .fest-section {
-  background: var(--ink);
-}
-
-.journal-card p {
-  color: var(--dust);
-}
-
-.journal-card__more {
+.corp-link {
   display: inline-block;
-  margin-top: 0.75rem;
+  margin-top: 1.25rem;
   font-size: 0.75rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -513,6 +464,16 @@
   color: var(--gold);
 }
 
+.corp-mv__body {
+  margin-top: 1rem;
+  color: var(--dust);
+}
+
+.corp-projects .meta {
+  color: var(--gold);
+  margin-bottom: 0.25rem;
+}
+
 .corp-projects {
   display: grid;
   gap: 1.25rem;
@@ -538,37 +499,6 @@
 
 .corp-projects p {
   color: var(--dust);
-}
-
-.corp-team {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
-}
-
-.corp-team .display {
-  font-size: 1.4rem;
-  margin-top: 0.65rem;
-}
-
-.corp-team p {
-  color: var(--dust);
-  font-size: 0.85rem;
-}
-
-.corp-docs {
-  display: grid;
-  gap: 0.75rem;
-}
-
-.corp-docs li {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  padding: 1rem 0;
-  border-bottom: 1px solid rgba(242, 239, 230, 0.12);
 }
 
 .contacto-grid {
@@ -612,11 +542,6 @@
     align-items: center;
   }
 
-  .home-journal__list {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-  }
-
   .fest-hero__grid {
     grid-template-columns: 0.85fr 1.15fr;
     align-items: end;
@@ -650,12 +575,6 @@
     direction: ltr;
   }
 
-  .journal-card {
-    grid-template-columns: 1.1fr 1fr;
-    align-items: center;
-    gap: 2rem;
-  }
-
   .corp-about__grid {
     grid-template-columns: 1.1fr 0.9fr;
     align-items: center;
@@ -666,8 +585,9 @@
     gap: 3rem;
   }
 
-  .corp-team {
-    grid-template-columns: repeat(4, 1fr);
+  .corp-pillars {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3rem;
   }
 
   .contacto-grid {
@@ -690,10 +610,6 @@
 
   .home-memory__preview > :last-child {
     grid-column: 1 / -1;
-  }
-
-  .corp-team {
-    grid-template-columns: 1fr 1fr;
   }
 
   .page-hero {
