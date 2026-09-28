@@ -4,8 +4,8 @@ import "./WhatsAppFloat.css";
 export default function WhatsAppFloat({ context = "general" }) {
   const text = encodeURIComponent(
     context === "convocatoria"
-      ? "Hola CimaRock, quiero información sobre la convocatoria."
-      : "Hola CimaRock, quiero contactarlos."
+      ? "Hola Cimarock, quiero información sobre la convocatoria."
+      : "Hola Cimarock, quiero contactarlos."
   );
   const href = `https://wa.me/${site.contact.whatsapp}?text=${text}`;
 

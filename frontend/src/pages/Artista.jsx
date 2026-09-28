@@ -1,6 +1,7 @@
 import { Link, useParams } from "react-router-dom";
 import artists from "../data/artists.json";
-import { PhotoFrame, Button, SectionHead } from "../components/ui";
+import editionsData from "../data/editions.json";
+import { PhotoFrame, SectionHead } from "../components/ui";
 import ArtistStrip from "../components/ArtistStrip";
 import "./pages.css";
 
@@ -15,7 +16,6 @@ export default function Artista() {
         <div className="container artista-hero__grid">
           <PhotoFrame
             label={artist.photo.label}
-            tone={artist.photo.tone}
             src={artist.photo.src}
             aspect="4/5"
           />
@@ -25,36 +25,33 @@ export default function Artista() {
             </p>
             <h1 className="display artista-hero__name">{artist.name}</h1>
             <p className="artista-hero__bio">{artist.bio}</p>
-            <div className="artista-hero__links">
-              <Button href={artist.spotify} variant="primary">
-                Spotify
-              </Button>
-              <Button href={artist.youtube} variant="ghost">
-                YouTube
-              </Button>
-              <Button href="#" variant="magenta">
-                {artist.instagram}
-              </Button>
-            </div>
           </div>
         </div>
       </header>
 
-      <section className="fest-section">
-        <div className="container">
-          <SectionHead eyebrow="Trayectoria" title="También en CimaRock" />
-          <ul className="artista-editions">
-            {artist.editions.map((year) => (
-              <li key={year}>
-                <Link to={year === 2026 ? "/festival" : `/memoria/${year}`}>
-                  <span className="display">{year}</span>
-                  <span>Edición CimaRock</span>
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </section>
+      {artist.editions.length > 0 && (
+        <section className="fest-section">
+          <div className="container">
+            <SectionHead eyebrow="Trayectoria" title="En el Festival Cimarock" />
+            <ul className="artista-editions">
+              {artist.editions.map((year) => (
+                <li key={year}>
+                  <Link
+                    to={
+                      year === editionsData.currentYear
+                        ? "/festival"
+                        : `/memoria/${year}`
+                    }
+                  >
+                    <span className="display">{year}</span>
+                    <span>Edición Cimarock</span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+      )}
 
       <ArtistStrip
         artists={related}

@@ -8,7 +8,7 @@ export default function SceneGrid({ artists }) {
   const [city, setCity] = useState("Todas");
 
   const genres = useMemo(
-    () => ["Todos", ...new Set(artists.map((a) => a.genre))],
+    () => ["Todos", ...new Set(artists.flatMap((a) => a.genres))],
     [artists]
   );
   const cities = useMemo(
@@ -17,7 +17,7 @@ export default function SceneGrid({ artists }) {
   );
 
   const filtered = artists.filter((a) => {
-    const g = genre === "Todos" || a.genre === genre;
+    const g = genre === "Todos" || a.genres.includes(genre);
     const c = city === "Todas" || a.city === city;
     return g && c;
   });
@@ -65,7 +65,6 @@ export default function SceneGrid({ artists }) {
           >
             <PhotoFrame
               label={artist.photo.label}
-              tone={artist.photo.tone}
               src={artist.photo.src}
               aspect={i % 3 === 0 ? "4/5" : "1/1"}
             />

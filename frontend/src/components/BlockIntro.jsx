@@ -10,7 +10,7 @@ export default function BlockIntro({
         <h2 className="display block-intro__title">{title}</h2>
         <div className="block-intro__copy">
           {children}
-          <p className="editorial block-intro__sign">— Corporación Festival CimaRock</p>
+          <p className="editorial block-intro__sign">— Corporación Cimarock</p>
         </div>
       </div>
     </section>

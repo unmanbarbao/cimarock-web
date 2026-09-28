@@ -1,0 +1,43 @@
+.lineup-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.35rem 1.5rem;
+}
+
+.lineup-list__item {
+  display: inline-flex;
+  flex-direction: column;
+  padding: 0.5rem 0;
+}
+
+.lineup-list__item .display {
+  font-size: clamp(1.6rem, 4vw, 2.4rem);
+  line-height: 1;
+}
+
+.lineup-list__item a.display {
+  border-bottom: 2px solid var(--gold);
+}
+
+.lineup-list__item a.display:hover {
+  color: var(--gold);
+}
+
+.lineup-list__item--headliner {
+  flex-basis: 100%;
+}
+
+.lineup-list__item--headliner .display {
+  font-size: clamp(3rem, 10vw, 6rem);
+  color: var(--gold);
+}
+
+.lineup-list__item--invitado .display {
+  color: var(--magenta);
+}
+
+.lineup-list__item .meta {
+  margin-top: 0.4rem;
+  color: var(--dust);
+}

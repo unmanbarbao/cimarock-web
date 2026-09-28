@@ -14,9 +14,8 @@ export default function HeroAfiche({
     <section className="hero-afiche texture-brick">
       <div className="hero-afiche__media">
         <PhotoFrame
-          label={photo?.label || "Concierto, público y escenario"}
-          tone={photo?.tone || "1"}
-          src={photo?.src || "/placeholders/crowd-2.jpg"}
+          label={photo.label}
+          src={photo.src}
           aspect="16/10"
           className="hero-afiche__photo"
         />

@@ -21,7 +21,7 @@ export default function NavCima() {
           to="/"
           className="nav-cima__brand"
           onClick={() => setOpen(false)}
-          aria-label="CimaRock — inicio"
+          aria-label="Cimarock — inicio"
         >
           <BrandLogo variant="red" className="nav-cima__logo" />
         </Link>

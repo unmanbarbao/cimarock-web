@@ -1,4 +1,5 @@
 import editionsData from "../data/editions.json";
+import corporation from "../data/corporation.json";
 import TimelineRail from "../components/TimelineRail";
 import "./pages.css";
 
@@ -10,14 +11,21 @@ export default function Historia() {
           <p className="meta">Patrimonio</p>
           <h1 className="display">Historia</h1>
           <p className="page-hero__lead editorial">
-            Desde 2019, CimaRock convierte trayectoria en memoria colectiva. Cada
-            edición es un capítulo del rock que nace en el llano.
+            {corporation.history.headline}
           </p>
+          {corporation.history.body.map((p) => (
+            <p key={p} className="page-hero__body">
+              {p}
+            </p>
+          ))}
         </div>
       </header>
       <section className="fest-section">
         <div className="container">
-          <TimelineRail editions={editionsData.editions} />
+          <TimelineRail
+            editions={editionsData.editions}
+            milestones={editionsData.milestones}
+          />
         </div>
       </section>
     </div>

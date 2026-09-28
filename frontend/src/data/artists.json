@@ -1,138 +1,128 @@
 [
   {
-    "slug": "los-llanos-duros",
-    "name": "Los Llanos Duros",
-    "genre": "Stoner / Desert",
+    "slug": "andre-simone",
+    "name": "André Simøne",
+    "genre": "Grunge · Stoner",
+    "genres": ["Grunge", "Stoner"],
     "city": "Yopal",
-    "bio": "Trío que mezcla el peso del desert rock con paisajes sonoros del llano. Activos desde 2018, han sido parte de la consolidación de la escena alternativa en Casanare.",
-    "editions": [2023, 2024, 2025],
-    "spotify": "https://open.spotify.com",
-    "youtube": "https://youtube.com",
-    "instagram": "@losllanosduros",
+    "bio": "Músico, compositor, productor y multi-instrumentista de Yopal, André Simone desarrolla una propuesta de rock alternativo marcada por la crudeza del grunge, las guitarras densas y una búsqueda sonora poderosa y auténtica. Desde su debut en 2022, ha consolidado una carrera en ascenso, posicionándose como uno de los artistas más prometedores del rock alternativo colombiano. Ganador nacional de la primera convocatoria del Festival Mutante del Museo Nacional de Colombia, donde presentó un formato inspirado en el punk y el grunge de los noventa. Desde Revival y Kenopsia en 2023, su catálogo ha continuado creciendo con canciones como Enjambre, Luces, Sangre Animal y Lodo, esta última publicada en 2025. André ha logrado trascender los límites de la escena local, haciendo presencia en diferentes ciudades y festivales del país, destacándose por la profundidad conceptual de su obra y la contundencia de su puesta en escena.",
+    "editions": [2023, 2026],
     "featured": true,
     "photo": {
-      "label": "Banda en ensayo, Yopal",
-      "tone": "1",
-      "src": "/placeholders/band-1.jpg"
+      "label": "André Simøne",
+      "src": "/escena/andre-simone.jpg"
     }
   },
   {
-    "slug": "bruja-de-sabana",
-    "name": "Bruja de Sabana",
-    "genre": "Post-punk",
+    "slug": "calek-soraca",
+    "name": "Calek Soracá",
+    "genre": "Rock fusión · Blues",
+    "genres": ["Rock fusión", "Blues"],
     "city": "Yopal",
-    "bio": "Voces afiladas y bajo insistente. Crónicas urbanas del trópico interior. Una de las propuestas más potentes de la nueva ola casanareña.",
-    "editions": [2024, 2025],
-    "spotify": "https://open.spotify.com",
-    "youtube": "https://youtube.com",
-    "instagram": "@brujadesabana",
+    "bio": "Calek Soracá es un guitarrista, cantante y compositor vinculado al rock de Casanare, cuya propuesta se ha movido entre el blues, el rock and roll, el jazz fusión y sensibilidades más contemporáneas del pop. Su proyecto en formato power trio ha definido públicamente su sonido bajo el concepto de “Rock Luz”, buscando combinar contundencia eléctrica con una faceta melódica y expresiva. Su discografía disponible incluye el sencillo Ser Uno y el EP Edad del Sol, publicado en 2018, con canciones como Zapato Viejo, Enamorado, Porque Sé Quién Eres y Un Atisbo del Cielo. A lo largo de su recorrido ha participado en escenarios de Yopal y en circuitos independientes fuera del departamento, incluyendo presentaciones en Boyacá y diferentes ediciones de la actividad rockera regional.",
+    "editions": [2022],
     "featured": true,
     "photo": {
-      "label": "Vocalista en vivo, CimaRock",
-      "tone": "2",
-      "src": "/placeholders/vocal-1.jpg"
+      "label": "Calek Soracá",
+      "src": "/escena/calek-soraca.jpg"
     }
   },
   {
-    "slug": "cemento-rojo",
-    "name": "Cemento Rojo",
-    "genre": "Hardcore",
-    "city": "Aguazul",
-    "bio": "Hardcore político y territorial. Letras sobre extractivismo, juventud y resistencia en el piedemonte.",
-    "editions": [2022, 2025],
-    "spotify": "https://open.spotify.com",
-    "youtube": "https://youtube.com",
-    "instagram": "@cementorojo",
+    "slug": "charly-days",
+    "name": "Charly Days",
+    "genre": "Rock alternativo · Indie rock",
+    "genres": ["Rock alternativo", "Indie rock"],
+    "city": "Yopal",
+    "bio": "Charly Days es un músico, guitarrista y compositor independiente originario de la ciudad de Yopal cuya propuesta se mueve entre el rock alternativo y el indie rock, con una aproximación centrada en la profundidad de las letras íntimas, canciones para conectar con su audiencia, las atmósferas y una sensibilidad contemporánea. Pese a estar en una etapa temprana de su carrera ha podido abrirse importantes espacios dentro de la escena local independiente, su etapa discográfica reciente comenzó a tomar forma con los sencillos Singular y Ausencia en 2024, seguida por Instante en 2025 y Umbral en 2026. Es uno de esos proyectos de nueva generación que amplían el mapa del rock regional hacia lenguajes menos pesados y más cercanos a la escena alternativa e independiente actual.",
+    "editions": [],
     "featured": true,
     "photo": {
-      "label": "Pogo frente al escenario",
-      "tone": "3",
-      "src": "/placeholders/crowd-1.jpg"
+      "label": "Charly Days",
+      "src": "/escena/charly-days.jpg"
     }
   },
   {
-    "slug": "orilla-negra",
-    "name": "Orilla Negra",
-    "genre": "Shoegaze",
-    "city": "Villanueva",
-    "bio": "Capas de guitarra y reverb que miran al río. Shoegaze tropical sin clichés costeños.",
-    "editions": [2025],
-    "spotify": "https://open.spotify.com",
-    "youtube": "https://youtube.com",
-    "instagram": "@orillanegra",
-    "featured": false,
-    "photo": {
-      "label": "Silueta contra luces ámbar",
-      "tone": "4",
-      "src": "/placeholders/lights-1.jpg"
-    }
-  },
-  {
-    "slug": "mata-de-ruido",
-    "name": "Mata de Ruido",
-    "genre": "Noise rock",
-    "city": "Yopal",
-    "bio": "Improvisación, feedback y humor negro. Colectivo abierto que nutre talleres y jams de la Corporación.",
-    "editions": [2021, 2023, 2024],
-    "spotify": "https://open.spotify.com",
-    "youtube": "https://youtube.com",
-    "instagram": "@mataderuido",
-    "featured": true,
-    "photo": {
-      "label": "Pedales y cables en backstage",
-      "tone": "5",
-      "src": "/placeholders/backstage-1.jpg"
-    }
-  },
-  {
-    "slug": "kilometro-cero",
-    "name": "Kilómetro Cero",
-    "genre": "Indie rock",
-    "city": "Paz de Ariporo",
-    "bio": "Melodías de carretera y letras de ida y vuelta. Puente entre el indie nacional y la periferia llanera.",
-    "editions": [2024],
-    "spotify": "https://open.spotify.com",
-    "youtube": "https://youtube.com",
-    "instagram": "@km0banda",
-    "featured": false,
-    "photo": {
-      "label": "Viaje al festival, atardecer",
-      "tone": "6",
-      "src": "/placeholders/sunset-1.jpg"
-    }
-  },
-  {
-    "slug": "tormenta-seca",
-    "name": "Tormenta Seca",
-    "genre": "Metal",
-    "city": "Yopal",
-    "bio": "Riffs densos y batería de verano. Representan la rama más pesada de la escena local.",
-    "editions": [2020, 2022, 2025],
-    "spotify": "https://open.spotify.com",
-    "youtube": "https://youtube.com",
-    "instagram": "@tormentaseca",
-    "featured": true,
-    "photo": {
-      "label": "Público con manos al aire",
-      "tone": "1",
-      "src": "/placeholders/crowd-2.jpg"
-    }
-  },
-  {
-    "slug": "casa-abierta",
-    "name": "Casa Abierta",
-    "genre": "Folk rock",
-    "city": "Yopal",
-    "bio": "Acústicos eléctricos. Cuentan el llano sin folclorismo de postal.",
+    "slug": "el-yopo",
+    "name": "El Yopo — Fabio Quintero",
+    "genre": "Joropo alternativo · Fusión",
+    "genres": ["Joropo alternativo", "Fusión"],
+    "city": "Maní",
+    "bio": "Fabio “El Yopo” Quintero Walteros es cantautor, compositor, productor y bandolista nacido en Maní, Casanare. Su obra parte de la música llanera para dialogar libremente con el rock, la cumbia, el ska, la electrónica y otras músicas latinoamericanas, convirtiéndolo en una de las figuras más visibles del llamado joropo alternativo. Su relación con la música comenzó desde la infancia y tiene una fuerte conexión con la tradición oral y musical de su familia y su territorio. Trabajos como Llanera Fusion Music y Quién Dijo Oe? condensan esa búsqueda sonora, mientras su trayectoria lo ha llevado a escenarios de Colombia, Ecuador, Perú, Argentina, Brasil y México. En 2025 fue uno de los invitados nacionales de Joropo al Parque en Bogotá.",
     "editions": [2023],
-    "spotify": "https://open.spotify.com",
-    "youtube": "https://youtube.com",
-    "instagram": "@casaabiertamusica",
+    "featured": true,
+    "photo": {
+      "label": "El Yopo — Fabio Quintero",
+      "src": "/escena/el-yopo.jpg"
+    }
+  },
+  {
+    "slug": "hell-command",
+    "name": "Hell Command",
+    "genre": "Thrash metal",
+    "genres": ["Thrash metal"],
+    "city": "Yopal",
+    "bio": "Hell Command representa una de las vertientes más pesadas de la escena musical de Casanare. Originada en Yopal y construida alrededor del thrash metal, la banda ha desarrollado una propuesta rápida, agresiva y fuertemente vinculada al lenguaje del metal underground. Bases especializadas registran su formación como trío con Nelson Mayorga en guitarra y voz, Camilo Sua en bajo y Javier Nocua en batería. Su álbum Metal Slaughter reúne canciones como Temple of Sin, Witches Sabbath, Evil, Misty Night y Comando del Infierno, combinando thrash, speed y elementos de metal extremo. La banda ha mantenido presencia en el circuito independiente de Yopal y fue incluida por Radiónica entre las propuestas locales de Cimarock 2023.",
+    "editions": [2022, 2023],
+    "featured": true,
+    "photo": {
+      "label": "Hell Command",
+      "src": "/escena/hell-command.jpg"
+    }
+  },
+  {
+    "slug": "jabbali",
+    "name": "Jabbalí",
+    "genre": "Grunge · Rock alternativo",
+    "genres": ["Grunge", "Rock alternativo"],
+    "city": "Yopal",
+    "bio": "Jabbalí (2014-2024) fue un power trío de Yopal cuya identidad nace del metal, el punk y el rock alternativo de los años noventa. Con guitarras ásperas, una base rítmica directa y una voz de carácter visceral, la banda se convirtió tempranamente en una de las propuestas de rock casanareño con mayor circulación fuera del departamento. En 2014 fue finalista de ExpoRock entre decenas de agrupaciones nacionales, impulsada por canciones como Hunt The Hunter. Más adelante presentó Skin & Blood, sencillo reseñado por medios especializados como una muestra de “rock crudo hecho en Casanare”. Considerada como banda de culto y pionera de la escena, su catálogo digital también conserva temas como We Are The Last Ones, mientras Julián Mesa, guitarrista y vocalista de la agrupación, continúa vinculado activamente a la escena cultural y musical de Yopal.",
+    "editions": [2022, 2023],
     "featured": false,
     "photo": {
-      "label": "Guitarra frente a sabana",
-      "tone": "2",
-      "src": "/placeholders/guitar-1.jpg"
+      "label": "Jabbalí",
+      "src": "/escena/jabbali.jpg"
+    }
+  },
+  {
+    "slug": "ofni",
+    "name": "OFNI",
+    "genre": "Indie rock · Rock alternativo",
+    "genres": ["Indie rock", "Rock alternativo"],
+    "city": "Yopal",
+    "bio": "OFNI es una banda de indie rock nacida en Yopal que aporta uno de los matices más frescos de la escena casanareña. Su propuesta combina guitarras melódicas, elementos del pop, una escritura sencilla y directa, dentro de una estética claramente ligada al rock independiente contemporáneo. Una reseña nacional describe su formación alrededor de Sebastián Ramos, Sebastián Pinto y Germán Reyes y destaca precisamente esa mezcla entre indie y energía juvenil. Su primer cuerpo discográfico importante fue el EP Abducción de 2023, seguido por sencillos como Mattine, Otra Vez, Arena y Sal, Baúl y Las nubes no son de algodón. En 2026 publicaron Amigos. La agrupación también ha representado a Yopal en circuitos independientes fuera de Casanare.",
+    "editions": [2023],
+    "featured": true,
+    "photo": {
+      "label": "OFNI",
+      "src": "/escena/ofni.jpg"
+    }
+  },
+  {
+    "slug": "the-criollos",
+    "name": "The Criollos",
+    "genre": "Joropo alternativo · Fusión",
+    "genres": ["Joropo alternativo", "Fusión"],
+    "city": "Yopal",
+    "bio": "The Criollos es una agrupación nacida en Yopal en 2015 con la intención de llevar el lenguaje de la música llanera hacia nuevos territorios. Su propuesta parte del joropo y el arpa llanera para encontrarse con el rock, el blues, el soul, el funk, el reggae y el jazz latino, convirtiéndose en uno de los proyectos pioneros del joropo alternativo casanareño. En 2018 publicaron el álbum Amor Criollito, un trabajo de ocho canciones que incluye Corazón Llanero, Baila, Vete e Inmensa Llanura. Su canción Baila mezcla específicamente joropo, bambuco y rock alternativo. Con presencia en medios nacionales y escenarios culturales, The Criollos continúa siendo una referencia para entender cómo las nuevas generaciones de Casanare reinterpretan su tradición sin desprenderse de ella; en 2025 hicieron parte de la programación de Joropo Fest.",
+    "editions": [],
+    "featured": false,
+    "photo": {
+      "label": "The Criollos",
+      "src": "/escena/the-criollos.jpg"
+    }
+  },
+  {
+    "slug": "two-for-kill",
+    "name": "Two For Kill",
+    "genre": "Metal alternativo",
+    "genres": ["Metal alternativo"],
+    "city": "Yopal",
+    "bio": "TWO FOR KILL —también estilizado como 2.4.KILL— pertenece a esa zona profundamente independiente del metal casanareño que ha crecido lejos de los grandes reflectores y de la industria musical tradicional. Su nombre forma parte de la memoria del movimiento alternativo local y de una nueva generación de proyectos que encontraron en los escenarios independientes un espacio para construir comunidad, volumen e identidad. Una propuesta de Julián Mesa y vinculada a la historia reciente del rock hecho en Casanare con participaciones en circuitos impulsados por IDARTES y presencia dentro de carteles históricos de Cimarock.",
+    "editions": [2023],
+    "featured": false,
+    "photo": {
+      "label": "Two For Kill",
+      "src": "/escena/two-for-kill.jpg"
     }
   }
 ]

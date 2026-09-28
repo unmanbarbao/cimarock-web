@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { resolvePhotoSrc, TONE_IMAGES } from "../data/placeholders";
 import "./ui.css";
 
 export function Button({
@@ -34,13 +33,11 @@ export function Button({
 
 export function PhotoFrame({
   label,
-  tone = "1",
   src,
   aspect = "3/2",
   className = "",
   children,
 }) {
-  const imageSrc = src || TONE_IMAGES[tone] || resolvePhotoSrc({ tone });
   return (
     <figure
       className={`photo-frame grain ${className}`}
@@ -48,8 +45,8 @@ export function PhotoFrame({
     >
       <img
         className="photo-frame__img"
-        src={imageSrc}
-        alt={label || "Fotografía CimaRock"}
+        src={src}
+        alt={label || "Fotografía Cimarock"}
         loading="lazy"
         decoding="async"
       />
